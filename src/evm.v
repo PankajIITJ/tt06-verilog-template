@@ -6,7 +6,8 @@
 `define default_netname none
 
 module evm(
-input voting_en,clk; //voting process will start when vote_en is on
+input voting_en; //voting process will start when vote_en is on
+input clk;
 input [2:0]voter_switch;
 output [6:0]party1; //Max no. of votes = 127
 output [6:0]party2;
